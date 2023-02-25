@@ -1,0 +1,26 @@
+input {
+    width: 45%;
+}
+
+.input_2 {
+    width: 20%;
+}
+
+.input_3 {
+    width: 30%;
+}
+
+#pie_de_pagina {
+    background-color: Lime;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono_texto {
+    font-size: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
