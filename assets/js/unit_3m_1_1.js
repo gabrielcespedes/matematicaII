@@ -1,6 +1,9 @@
-let numeros = [];
-for (i=1; i<=10; i++){
-    numeros.push(Math.floor(Math.random()*35 + 10));
+function numeros_azar() {
+    let numeros = [];
+    for (i=1; i<=10; i++){
+        numeros.push(Math.floor(Math.random()*35 + 10));
+    }
+    return numeros;
 }
 
 let text = `
@@ -21,11 +24,14 @@ row = document.getElementById('contenedor_fila');
 
 let string_table='';
 
-for (i=1; i<=10; i++) {
-    string_table += `<td>${numeros[i-1]}</td>`
-}
+let text2 = '';
 
-for (i = 1; i<=1; i++) {
+lista_numeros = numeros_azar(); 
+
+for (i=1; i<=3; i++) {         
+    for (j=1; j<=10; j++) {
+        string_table += `<td>${lista_numeros[j-1]}</td>`
+    }
     text += `<div class="card mx-auto my-3" style="width: 18rem;">
     <div class="card-body text-dark d-inline">
         <table>
@@ -39,8 +45,9 @@ for (i = 1; i<=1; i++) {
     <h1 id="hcard_3m_1_1"></h1>
     </div>
     `
+    string_table = '';  
 }
 
 
 
-row.innerHTML = text;
+row.innerHTML = text + text2;
