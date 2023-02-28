@@ -22,9 +22,9 @@ input {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-body {
-    color: black;
+.image {
+    height: 400px;
 }

@@ -11,6 +11,7 @@ function filter_modulos() {
 function render_list() {
     let lista = document.getElementById('lista');
     lista.innerHTML = `<li class="text-light fs-3"><a target="_blank" href="primero_segundo.html">1°Básico - 2°Básico. Matemática 📝</a></li>
-    <li class="text-light fs-3"><a target="_blank" href="tercero_medio_dispersion.html">3° Medio. Medidas de Dispersión. Matemática 📝</a></li>`   
+    <li class="text-light fs-3"><a target="_blank" href="tercero_medio_dispersion.html">3° Medio. Recuerdo Medidas de Tendencia Central: Promedio. Matemática 📝</a></li>
+    <li class="text-light fs-3"><a target="_blank" href="tercero_medio_dispersion_2.html">3° Medio. Medidas de Dispersión. Matemática 📝</a></li>`   
 }
 

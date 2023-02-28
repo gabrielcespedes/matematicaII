@@ -28,9 +28,9 @@ function suma_lista(lista) {
 let respuestas = [Math.round(suma_lista(lista1)/10),Math.round(suma_lista(lista2)/10),Math.round(suma_lista(lista3)/10),Math.round(suma_lista(lista4)/10),Math.round(suma_lista(lista5)/10),Math.round(suma_lista(lista6)/10),Math.round(suma_lista(lista7)/10),Math.round(suma_lista(lista8)/10)]
 
 let text = `
-<h2 class = "mt-3">Repaso Estadística</h2>
+<h2 class = "mt-3">Repaso Promedio</h2>
 <div class="container">
-    <div class="card m-auto" style="width: 18rem;">
+    <div class="card m-auto" style="width: 36rem;">
         <div class="card-body text-dark">
             <h5 class="card-title">Recuerda que dentro de las medidas de tendencia central, está el promedio, que consiste en la suma de todos los valores de una variable dividido por la cantidad de datos.</h5>
         </div>        
@@ -51,16 +51,16 @@ lista_numeros = numeros_azar();
 
 for (i=1; i<=8; i++) {         
     for (j=1; j<=10; j++) {
-        string_table += `<td>${matriz_numeros[i-1][j-1]} </td>`
+        string_table += `<td class="text-center">${matriz_numeros[i-1][j-1]} </td>`
     }
-    text += `<div class="card mx-auto my-3" style="width: 18rem;">
+    text += `<div class="card mx-auto my-3" style="width: 36rem;">
     <div class="card-body text-dark d-inline">
-        <table>
+        <table class = "table table-bordered">
         <tr>
             ${string_table}
         </tr>
         </table>
-        <input id="input_3m_1_${i}">
+        <input id="input_3m_1_${i}" class="input_2">
         <button id="save_3m_1_${i}" class="bg-secondary text-white">Guardar</button>
     </div>
     <h1 id="hcard_3m_1_${i}"></h1>
