@@ -31,7 +31,7 @@ function ejercicio_modulo3m_1_2() {
     </div>
     `
 
-    row.innerHTML = text + `<p class = "fs-5 bg-secondary">Fuente imágenes: Matemática 2° básico Carolina Ubilla - Vanesa Cerda. Santillana.</p>`;
+    row.innerHTML = text;
 
     console.log(altura);
     console.log(num_jugadores);
