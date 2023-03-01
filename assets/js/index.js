@@ -5,7 +5,7 @@ function filter_modulos() {
     variable_pass = pass_input.value;
     if (variable_name === "gabriel" && variable_pass === "password") {        
         render_list();
-    } else if (variable_name === "maximiliano" && variable_pass === "maximiliano2023") {
+    } else if (variable_name === "maximiliano_2023" && variable_pass === "384fwof34") {
         render_list2();
     }
 }
